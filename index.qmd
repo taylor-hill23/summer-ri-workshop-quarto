@@ -1,0 +1,28 @@
+---
+title: "Summer RI Workshop"
+---
+
+Welcome to FSU! This website will have what you need to participate in the R workshop 
+and additional resources to aid you in learning how to code in R. At FSU, all methods
+courses use the R language for running statistical analysis. Therefore, learning R 
+is very important, but do not fear. You do not need to have any prior knowledge in R 
+in order to be successful at FSU. 
+
+This workshop 
+
+### [Course Materials](materials_update.qmd)
+
+The Course Materials page has all the materials for each day of class. This includes the slides, example code, and related files.
+
+### [Homework](homework_update.qmd)
+
+As the name suggests, this page has the homework for each day of class. You will also submit your homework through the Dropbox links at the end of each assignment.
+
+### [Data](data.qmd)
+
+The Data page is where you can find the data we will use for class. Each dataset is linked in its section heading. Underneath each heading, you will find sample code for reading the data into R.
+
+### [Additional Resources](additional_resources.qmd)
+
+Because the course is only a few days long, we can realistically cover only so much. The Additional Resources page links to other resources that can make learning R a little easier.
+

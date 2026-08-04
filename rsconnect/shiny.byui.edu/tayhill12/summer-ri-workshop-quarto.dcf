@@ -1,0 +1,12 @@
+name: summer-ri-workshop-quarto
+title: summer-ri-workshop-quarto
+username: tayhill12
+account: tayhill12
+server: shiny.byui.edu
+hostUrl: https://shiny.byui.edu/__api__
+appId: 2543
+bundleId: 5075
+url: https://shiny.byui.edu/content/374e752d-0d76-439b-a734-3489ac222e54/
+version: 1
+asMultiple: FALSE
+asStatic: TRUE

@@ -1,0 +1,22 @@
+---
+title: "Additional Resources"
+---
+
+[Here](https://www.dropbox.com/sh/8o8k2ulhh529wdz/AAAN-pHd-7i224GRNPVFO1gja?dl=0) is a Dropbox folder with several books for learning R. I have used some of them; others were recommended to me. Some are more advanced than what you may be looking for right now, but feel free to save them for when your methods skills are more developed. The Scott Long book is particularly useful for maximum likelihood estimation, as is Gill (2014), although those books focus more on statistics than coding. I highlight a few specific resources below.
+
+## [R for Data Science](https://r4ds.hadley.nz/)
+
+This book is fantastic. I used the [first edition](https://r4ds.had.co.nz/), but either version is an excellent resource. Hadley Wickham developed the tidyverse, and this book is a go-to source for learning it. It covers not only how to write code but also important workflow topics we do not have time to cover fully, including scripts, file structures, and R projects. It is also freely available online.
+
+## [Tidyverse Style Guide](https://style.tidyverse.org/)
+
+This website is a style guide for using the tidyverse. Clean code is important for reproducibility and your own sanity. You do not have to follow every recommendation, but it is a strong starting point for learning how to organize and write your code.
+
+## Graphical Data Analysis with R
+
+I have little experience with this book, but Matt Pietryka highly recommends it. Written by Anthony Unwin, it includes code examples and helps readers learn both ggplot and base R graphics. It focuses not only on how to make graphs, but also on how to communicate information effectively through them. I have a paper copy if anyone needs to borrow it.
+
+## Statistical Rethinking
+
+This one is too advanced for now, but I enjoyed it. It is a book about Bayesian statistics. Although I personally found Gill (2014) more engaging and easier to understand, *Statistical Rethinking* is well written and includes model implementations you can follow. A free [tidyverse-based version](https://bookdown.org/content/4857/) is available online.
+

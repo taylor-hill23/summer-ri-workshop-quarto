@@ -1,0 +1,42 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - materials_update.qmd
+    - homework_update.qmd
+    - data.qmd
+    - additional_resources.qmd
+
+website:
+  title: "Summer RI workshop"
+  search: false
+  sidebar:
+    style: docked
+    background: "#CEB888"
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: materials_update.qmd
+        text: Course Materials
+      - href: homework_update.qmd
+        text: Homework
+      - href: data.qmd
+        text: Data
+      - href: additional_resources.qmd
+        text: Additional Resources
+
+format:
+  html:
+    theme:
+      - pulse
+      - theme.scss
+    css: styles.css
+    toc: false
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  eval: false
+  freeze: auto
+

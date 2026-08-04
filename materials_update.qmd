@@ -1,0 +1,69 @@
+---
+title: "Course Materials"
+---
+
+## Day 1
+
+### What did we cover?
+
+- Installing R
+- What is R exactly?
+  - Console, scripts, and the global environment
+- Using R as a calculator
+- Assigning objects
+- What is a function?
+- Vectors
+- Different types of variables
+- Tibbles, `mutate()`, `filter()`, `select()`, `rename()`, and `slice()`
+- Setting a working directory
+
+### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-1-update.html)
+
+## Day 2
+
+### What did we cover?
+
+- Practice with data cleaning
+- Different types of data
+- More on working with data we care about
+- Aggregating data with `group_by()` and `summarize()`
+- Cleaning data
+- Aggregating data
+- Summarizing a data frame
+- Summarizing a single variable
+- Using lists
+
+### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-2-update.html)
+
+### [Live Coding Data](https://austin-cutler.quarto.pub/summer-ri-workshop/live_coding_1.csv)
+
+### [Class Code](https://austin-cutler.quarto.pub/summer-ri-workshop/live_coding_day_2.R)
+
+The code we wrote together as a class can be found at the link above.
+
+## Day 3
+
+### What did we cover?
+
+- More practice with `mutate()`, `group_by()`, and `summarize()`
+- Learning more about the `factor()` function
+
+### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-3-update.html)
+
+### [Olympics Data](https://austin-cutler.quarto.pub/summer-ri-workshop/olympics.csv)
+
+### [Class Code](https://austin-cutler.quarto.pub/summer-ri-workshop/live_coding_day_3.R)
+
+The code from today’s class can be found at the link above. It largely covers using `ggplot()`.
+
+## Day 4
+
+### What did we cover?
+
+- Reviewed each other’s graphs
+- Reviewed key concepts from the workshop
+- `for` loops
+- Writing functions
+
+### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-4.html)
+

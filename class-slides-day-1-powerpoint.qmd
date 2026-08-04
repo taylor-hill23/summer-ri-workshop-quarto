@@ -1,0 +1,1046 @@
+---
+title: "So You’re About to Be a Grad Student?"
+subtitle: "Day 1 of the RI Workshop, Summer 2024"
+author: "Austin Cutler"
+institute: "FSU"
+format:
+  pptx:
+    slide-level: 2
+    incremental: false
+    toc: false
+execute:
+  eval: false
+  echo: true
+  warning: false
+  message: false
+lang: en
+---
+
+<!--
+Open this file in RStudio and click Render, or run:
+
+  quarto render class-slides-day-1-powerpoint.qmd
+
+The output will be class-slides-day-1-powerpoint.pptx.
+
+The uploaded HTML referenced nine files that were not included with it:
+  www/workshop_qr.png
+  www/screenshot1.png through www/screenshot8.png
+
+Visible placeholders mark those slides below. To restore an image, copy the file
+into a www folder next to this QMD, delete the placeholder text, and uncomment
+the corresponding Markdown image line.
+-->
+
+## What’s This Workshop?
+
+- This workshop is an introduction to using R.
+- No prior knowledge is assumed.
+- The goal is to make your time in POS 5737 a little easier.
+  - R is fairly complicated to use, but we’re going to get as far as we can this week!
+
+## Introductions!
+
+- Austin
+- Buffalo, NY
+- Americanist
+- I came to FSU because my master’s thesis adviser said it was a good idea.
+- I also coach high school track—hurdles—and football!
+
+## Ground Rules for the Class
+
+- Please ask questions!
+- Look into Stack Exchange.
+- Use the Help function in RStudio.
+- Please don’t use ChatGPT…yet.
+
+## Today’s Class
+
+- Welcome to graduate school and tips for making it manageable
+- Installing R and RStudio
+- What is R?
+  - The different parts of RStudio
+  - Confirming everything is installed
+  - How it works
+- Using R as a calculator
+- R scripts, functions, and objects
+- Reading data into R
+- Understanding and working with data
+
+## Welcome to FSU!
+
+This part of the class will be a little different from the rest. We’ll cover:
+
+- What graduate school is—and is not
+- Expectations
+- How to manage it
+
+## What Graduate School Is—and Is Not
+
+- This is not undergrad 2.0.
+- This is a lot of work.
+- It is very rewarding, and you’ll likely have more freedom than you’re used to.
+
+## Expectations
+
+**Go to class—unless you actually can’t.**
+
+- Participate when you do go to class.
+- Do the reading—as much of it as you can. It is a lot.
+
+**Go to department functions.**
+
+- Chris will say more about this at orientation, but about three hours of your contract are allotted to professionalization events.
+
+**Fulfill your GA and RA responsibilities.**
+
+- Faculty differ in what they ask, but they are usually good about not using more time than they are allotted.
+- If there is a problem, talk to Chris.
+
+## Managing Graduate School
+
+- Impostor syndrome is real. Do your best not to let it get to you too much.
+- FSU has therapy resources.
+- Work together.
+  - In most methods classes, collaboration is welcomed and arguably necessary—just make sure to turn in your own work.
+- Keep a schedule.
+  - Find the times that work best for particular tasks and lean into them. A schedule helps you get things done.
+- **Do things other than this.**
+  - Tallahassee is a medium-sized city, and there is plenty to do around town and at FSU.
+
+## Now for Some R
+
+This section introduces R, RStudio, objects, vectors, data frames, and basic data cleaning.
+
+## Course Website
+
+**Image placeholder:** course website QR code (`www/workshop_qr.png`)
+
+<!-- ![](www/workshop_qr.png){width=65%} -->
+
+## Installing RStudio
+
+Use this slide to add installation links or walk through the installation process live.
+
+## Changing the RStudio Theme
+
+Use the next four image slides to demonstrate changing the RStudio theme.
+
+## RStudio Theme: Step 1
+
+**Image placeholder:** `www/screenshot1.png`
+
+<!-- ![](www/screenshot1.png){width=100%} -->
+
+## RStudio Theme: Step 2
+
+**Image placeholder:** `www/screenshot2.png`
+
+<!-- ![](www/screenshot2.png){width=100%} -->
+
+## RStudio Theme: Step 3
+
+**Image placeholder:** `www/screenshot3.png`
+
+<!-- ![](www/screenshot3.png){width=100%} -->
+
+## RStudio Theme: Step 4
+
+**Image placeholder:** `www/screenshot4.png`
+
+<!-- ![](www/screenshot4.png){width=100%} -->
+
+## The Different Parts of RStudio
+
+Use the next four image slides to identify the main RStudio panes and controls.
+
+## RStudio Interface: Step 1
+
+**Image placeholder:** `www/screenshot5.png`
+
+<!-- ![](www/screenshot5.png){width=100%} -->
+
+## RStudio Interface: Step 2
+
+**Image placeholder:** `www/screenshot6.png`
+
+<!-- ![](www/screenshot6.png){width=100%} -->
+
+## RStudio Interface: Step 3
+
+**Image placeholder:** `www/screenshot7.png`
+
+<!-- ![](www/screenshot7.png){width=100%} -->
+
+## RStudio Interface: Step 4
+
+**Image placeholder:** `www/screenshot8.png`
+
+<!-- ![](www/screenshot8.png){width=100%} -->
+
+## Using R as a Calculator
+
+```r
+1 + 1
+```
+
+```text
+[1] 2
+```
+
+```r
+1 + 3
+```
+
+```text
+[1] 4
+```
+
+```r
+100000000000000 * 21000000000000
+```
+
+```text
+[1] 2.1e+27
+```
+
+```r
+sqrt(400)
+```
+
+```text
+[1] 20
+```
+
+## Practice with R as a Calculator
+
+Take a moment and perform the following calculations:
+
+- $9 + 10$
+- $9 \times 10$
+- $9 / 10$
+- $9^2$
+- $\sqrt{32}$
+- $\log(9)$^[R defaults to the natural logarithm, $\ln$ or $\log_e$, which is most commonly used in statistics.]
+
+## Object-Oriented Computing: Scalars
+
+```r
+b <- 2
+b + 2
+```
+
+```text
+[1] 4
+```
+
+```r
+# Use # to leave comments in your code.
+## Assign 2 to the letter b.
+b <- 2
+
+## Add b and 2.
+b + 2
+```
+
+```text
+[1] 4
+```
+
+Using `2 + 2` would be easier here; this example simply demonstrates how objects work.
+
+## Functions
+
+```r
+# Take the square root of 400.
+sqrt(400)
+```
+
+```text
+[1] 20
+```
+
+```r
+# Take the square root of 400 and assign it.
+sq400 <- sqrt(400)
+sq400
+```
+
+```text
+[1] 20
+```
+
+```r
+sqrt(sq400)
+```
+
+```text
+[1] 4.472136
+```
+
+## Strings
+
+```r
+# Words are represented as character strings.
+"Hello World"
+```
+
+```text
+[1] "Hello World"
+```
+
+## Strings Cannot Be Used as Numbers
+
+```r
+"Hello World" + 2
+```
+
+```text
+Error in "Hello World" + 2: non-numeric argument to binary operator
+```
+
+The same is true even when the character string contains a number.
+
+```r
+"3" + 2
+```
+
+```text
+Error in "3" + 2: non-numeric argument to binary operator
+```
+
+## Converting Strings to Numbers
+
+```r
+as.numeric("3") + 2
+```
+
+```text
+[1] 5
+```
+
+```r
+library(tidyverse)
+parse_number("3") + 2
+```
+
+```text
+[1] 5
+```
+
+## `parse_number()` Extracts a Number
+
+```r
+parse_number("himothy316") + 2
+```
+
+```text
+[1] 318
+```
+
+## `as.numeric()` Cannot Extract Embedded Numbers
+
+```r
+parse_number("himothy316") + 2
+```
+
+```text
+[1] 318
+```
+
+```r
+as.numeric("himothy316") + 2
+```
+
+```text
+[1] NA
+```
+
+## Why the Difference Matters
+
+This difference is useful when numbers are embedded in data labels.
+
+```r
+parse_number("ideo2")
+```
+
+```text
+[1] 2
+```
+
+## Vectors
+
+- Working with only one number is not realistic.
+- Instead, we can work with collections of values called **vectors**.
+
+Common vector types include:
+
+- **Numeric:** values such as `1.1`, `2`, and `100`
+- **Character:** strings such as `"Republican"`, `"Democratic"`, and `"Independent"`
+- **Factor:** ordered character categories, such as a scale from “Very Liberal” to “Very Conservative”
+- **Logical:** only `TRUE` or `FALSE` values
+
+## Numeric Vectors
+
+```r
+a <- c(5, 10, 15, 100)
+a
+```
+
+```text
+[1]   5  10  15 100
+```
+
+```r
+a / 5
+exp(a)
+mean(a) # Congratulations: you're now doing statistics.
+```
+
+```text
+[1]  1  2  3 20
+[1] 1.484132e+02 2.202647e+04 3.269017e+06 2.688117e+43
+[1] 32.5
+```
+
+## Character Vectors
+
+```r
+p <- c("Republican", "Democrat", "Republican", "Independent")
+p
+```
+
+```text
+[1] "Republican"  "Democrat"  "Republican"  "Independent"
+```
+
+Numeric functions do not work on character vectors.
+
+```r
+p * 3
+```
+
+```text
+Error in p * 3: non-numeric argument to binary operator
+```
+
+## Escape Sequences in Strings
+
+Inside a string, a backslash introduces an **escape sequence**:
+
+- `\n` starts a new line.
+- `\t` inserts a tab.
+
+```r
+cat("Repu\nblican")
+cat("Demo\tcrat")
+```
+
+```text
+Repu
+blican
+Demo    crat
+```
+
+## Factor Vectors
+
+```r
+p1 <- c("Republican", "Republican", "Democrat", "Other")
+class(p1)
+```
+
+```text
+[1] "character"
+```
+
+```r
+table(p1)
+```
+
+```text
+p1
+  Democrat      Other Republican 
+         1          1          2
+```
+
+Problem: the ordering is odd, and Independents are missing.
+
+```r
+pid <- factor(
+  p1,
+  levels = c("Republican", "Independent", "Democrat", "Other")
+)
+```
+
+## Checking the Factor
+
+```r
+class(pid)
+```
+
+```text
+[1] "factor"
+```
+
+```r
+table(pid)
+```
+
+```text
+pid
+ Republican Independent    Democrat       Other 
+          2           0           1           1
+```
+
+The factor now has a meaningful order and includes the missing category.
+
+## Practice with Vectors
+
+Include comments throughout your code.
+
+**Numeric**
+
+- Create `my_vector` with the values 2, 6, 4, 3, 5, and 17.
+- Find the sum with `sum()`.
+- Find the square root of each element with `sqrt()`.
+
+**Character**
+
+- Create `sex`: Male, Female, Male, Male, Female.
+- Create `ideology`: Liberal, Moderate, Moderate, Conservative, Liberal.
+
+**Factor**
+
+- Add levels to `sex`, ordered Male then Female.
+- Order the levels of `ideology` in a meaningful way.
+
+## Missing Values
+
+- Missing values are denoted by `NA`.
+- Some functions preserve them.
+
+```r
+x <- c(1, 4, 7, NA, 2)
+log(x)
+```
+
+```text
+[1] 0.0000000 1.3862944 1.9459101        NA 0.6931472
+```
+
+- Some functions return `NA` unless you change an argument.
+
+```r
+sum(x)
+sum(x, na.rm = TRUE)
+```
+
+```text
+[1] NA
+[1] 14
+```
+
+## Logical Operators
+
+Logical operators test whether conditions hold.
+
+| Operator | Syntax |
+|:--|:--:|
+| Less than | `<` |
+| Less than or equal to | `<=` |
+| Exactly equal to | `==` |
+| Greater than or equal to | `>=` |
+| Greater than | `>` |
+| Not equal to | `!=` |
+| Or | `\|` |
+| And | `&` |
+
+## Data Frames and Tibbles
+
+- Most data will be organized as **data frames** or **tibbles**.
+- For our purposes, they are functionally similar.
+- Think of a data frame or tibble as a collection of vectors.
+
+```r
+data.frame(
+  name = c("John", "Jacob", "Jingleheimer Schmidt"),
+  ideo = c(1, 4, 7),
+  sex  = c("Male", "Male", "Male")
+) -> his_name
+```
+
+## Creating a Tibble
+
+Install the tidyverse package once from the console:
+
+```r
+install.packages("tidyverse")
+```
+
+Then load it and create the tibble:
+
+```r
+library(tidyverse)
+
+tibble(
+  name = c("John", "Jacob", "Jingleheimer Schmidt"),
+  ideo = c(1, 4, 7),
+  sex  = c("Male", "Male", "Male")
+) -> his_name
+```
+
+## Calling a Column
+
+The `$` operator extracts one column as a vector.
+
+```r
+his_name$name
+```
+
+```text
+[1] "John"  "Jacob"  "Jingleheimer Schmidt"
+```
+
+```r
+his_name$ideo / 2
+```
+
+```text
+[1] 0.5 2.0 3.5
+```
+
+## Combining Vectors into a Tibble
+
+Vectors with the same length can be collected into a tibble.
+
+```r
+name <- c("John", "Jacob", "Jingleheimer Schmidt")
+ideo <- c(1, 4, 7)
+sex  <- c("Male", "Male", "Male")
+
+tibble(name, ideo, sex)
+```
+
+```text
+# A tibble: 3 × 3
+  name                  ideo sex
+  <chr>                <dbl> <chr>
+1 John                     1 Male
+2 Jacob                    4 Male
+3 Jingleheimer Schmidt     7 Male
+```
+
+## Making Data Usable with `mutate()`
+
+Data are often not usable immediately. Use `mutate()` to create a variable.
+
+```r
+his_name %>%
+  mutate(
+    ideo_cat = c("Very Conservative", "Moderate", "Very Liberal")
+  )
+```
+
+```text
+# A tibble: 3 × 4
+  name                  ideo sex   ideo_cat
+  <chr>                <dbl> <chr> <chr>
+1 John                     1 Male  Very Conservative
+2 Jacob                    4 Male  Moderate
+3 Jingleheimer Schmidt     7 Male  Very Liberal
+```
+
+The `%>%` operator is a **pipe**. Insert it with Ctrl—or Command—Shift-M.
+
+## The Base R Equivalent
+
+```r
+his_name$ideo_cat <- c(
+  "Very Conservative",
+  "Moderate",
+  "Very Liberal"
+)
+
+his_name
+```
+
+```text
+# A tibble: 3 × 4
+  name                  ideo sex   ideo_cat
+  <chr>                <dbl> <chr> <chr>
+1 John                     1 Male  Very Conservative
+2 Jacob                    4 Male  Moderate
+3 Jingleheimer Schmidt     7 Male  Very Liberal
+```
+
+## `mutate()` and `case_when()`
+
+The previous approach works only because we knew the exact data dimensions. `case_when()` creates a new variable conditionally.
+
+```r
+his_name %>%
+  mutate(
+    ideo_cat = case_when(
+      ideo == 1 ~ "Very Conservative",
+      ideo == 4 ~ "Moderate",
+      ideo == 7 ~ "Very Liberal"
+    )
+  ) -> his_name_2
+
+his_name_2
+```
+
+```text
+# A tibble: 3 × 4
+  name                  ideo sex   ideo_cat
+  <chr>                <dbl> <chr> <chr>
+1 John                     1 Male  Very Conservative
+2 Jacob                    4 Male  Moderate
+3 Jingleheimer Schmidt     7 Male  Very Liberal
+```
+
+## `filter()`
+
+Use `filter()` to keep rows matching a condition.
+
+```r
+his_name_2 %>%
+  filter(ideo_cat == "Very Liberal")
+```
+
+```text
+# A tibble: 1 × 4
+  name                  ideo sex   ideo_cat
+  <chr>                <dbl> <chr> <chr>
+1 Jingleheimer Schmidt     7 Male  Very Liberal
+```
+
+The function keeps the condition you specify; it does not remove it.
+
+## Removing Rows with `filter()`
+
+Use `!=` to keep rows that are **not** equal to a value.
+
+```r
+his_name_2 %>%
+  filter(ideo_cat != "Very Liberal")
+```
+
+```text
+# A tibble: 2 × 4
+  name   ideo sex   ideo_cat
+  <chr> <dbl> <chr> <chr>
+1 John      1 Male  Very Conservative
+2 Jacob     4 Male  Moderate
+```
+
+## Variable Names
+
+Research data often arrive in poor condition, especially variable names.
+
+```r
+tibble(
+  X1 = c(123, 124, 125, 126),
+  X2 = c(1, 2, 4, 7),
+  X3 = c("abortion", "health care", "guns", "police")
+) -> data
+```
+
+What does each variable represent?
+
+## Renaming Variables
+
+Ask two questions:
+
+- Is the name informative?
+- Is the name easy to work with?
+
+```r
+data %>%
+  rename(
+    id    = X1,
+    ideo  = X2,
+    issue = X3
+  )
+```
+
+```text
+# A tibble: 4 × 3
+     id  ideo issue
+  <dbl> <dbl> <chr>
+1   123     1 abortion
+2   124     2 health care
+3   125     4 guns
+4   126     7 police
+```
+
+## Informative Names Can Still Be Awkward
+
+```r
+tibble(
+  "ID Number" = c(123, 124, 125, 126),
+  "Ideology Numeric" = c(1, 2, 4, 7),
+  "Most Important Issue" = c(
+    "abortion", "health care", "guns", "police"
+  )
+) -> data
+```
+
+The `clean_names()` function from **janitor** can fix them.
+
+```r
+install.packages("janitor")
+```
+
+## Cleaning Variable Names
+
+Use `::` to call one function directly from a package.
+
+```r
+data %>%
+  janitor::clean_names() -> data
+
+data
+```
+
+```text
+# A tibble: 4 × 3
+  id_number ideology_numeric most_important_issue
+      <dbl>            <dbl> <chr>
+1       123                1 abortion
+2       124                2 health care
+3       125                4 guns
+4       126                7 police
+```
+
+Without `janitor::` or a loaded package, the function will not be found.
+
+## Selecting Variables
+
+Use `select()` with either a variable name or position.
+
+```r
+data %>%
+  select(most_important_issue)
+
+data %>%
+  select(3)
+```
+
+```text
+# A tibble: 4 × 1
+  most_important_issue
+  <chr>
+1 abortion
+2 health care
+3 guns
+4 police
+```
+
+## Selecting Rows with `slice()`
+
+Suppose the first row contains variable names instead of data.
+
+```r
+tibble(
+  country = c("country", "USA", "China", "Germany"),
+  wars    = c("wars", 2, 4, 5),
+  pres    = c("pres", 1, 0, 1),
+  par     = c("par", "Congress", "None", "Parliament")
+) -> country
+
+country
+```
+
+```text
+# A tibble: 4 × 4
+  country wars  pres  par
+  <chr>   <chr> <chr> <chr>
+1 country wars  pres  par
+2 USA     2     1     Congress
+3 China   4     0     None
+4 Germany 5     1     Parliament
+```
+
+## Removing Rows and Columns
+
+Use a minus sign to remove a row with `slice()` or a column with `select()`.
+
+```r
+country %>%
+  slice(-1) -> country
+
+country %>%
+  select(-wars)
+```
+
+```text
+# A tibble: 3 × 3
+  country pres  par
+  <chr>   <chr> <chr>
+1 USA     1     Congress
+2 China   0     None
+3 Germany 1     Parliament
+```
+
+## More on Cleaning
+
+One of the last cleaning steps is ensuring that variables use the proper types.
+
+```text
+# A tibble: 3 × 4
+  country wars  pres  par
+  <chr>   <chr> <chr> <chr>
+1 USA     2     1     Congress
+2 China   4     0     None
+3 Germany 5     1     Parliament
+```
+
+`wars` and `pres` are character variables, but they need to be numeric. We can fix this with functions we already learned.
+
+## Practice with Data Cleaning
+
+Create the sample data:
+
+```r
+tibble(
+  country = c("country", "USA", "China", "Germany"),
+  wars    = c("wars", 2, 4, 5),
+  pres    = c("pres", 1, 0, 1),
+  par     = c("par", "Congress", "None", "Parliament")
+) -> country
+```
+
+Then use `slice()`, `parse_number()`, and `mutate()` to clean it.
+
+## Data-Cleaning Solution
+
+```r
+country %>%
+  slice(-1) %>%
+  mutate(
+    wars = parse_number(wars),
+    pres = parse_number(pres)
+  )
+```
+
+```text
+# A tibble: 3 × 4
+  country  wars  pres par
+  <chr>   <dbl> <dbl> <chr>
+1 USA         2     1 Congress
+2 China       4     0 None
+3 Germany     5     1 Parliament
+```
+
+## Reading Data into R
+
+Most data will come from a file, often a CSV.
+
+```r
+library(tidyverse)
+
+# Base R
+anes <- read.csv("anes.csv")
+
+# tidyverse
+anes <- read_csv("anes.csv")
+```
+
+Running these lines one after another leaves only the second version of `anes` in the global environment.
+
+## Working Directories
+
+The previous code works only if the file is in your **working directory**—the folder where R looks for and saves files.
+
+```r
+setwd("C:/Users/Austin/path/to/file")
+anes <- read.csv("anes.csv")
+```
+
+On Windows, use forward slashes and place the path inside quotation marks.
+
+## More on Working Directories
+
+- Change the working directory with `setwd()`.
+- Check the working directory with `getwd()`.
+- Alternatives to manually changing the directory:
+  - Open R by opening an R script.
+  - Specify the full path in your code.
+  - Work inside an R project.
+
+```r
+library(tidyverse)
+anes <- read_csv("C:/Users/Austin/path/to/file/anes.csv")
+```
+
+## Practice: Olympics Data
+
+From the course website under Day 1, download the Olympics data and:
+
+1. Read it with both `read_csv()` and `read.csv()`; note the differences.
+2. Keep only the country, winter, and summer variables with `select()`.
+3. Rename the variables clearly.
+4. Create a variable for the total number of medals.
+5. Use `filter()` to show one country.
+6. Use `filter()` to remove one country.
+
+You will need `rowwise()` to sum within each row.
+
+## `rowwise()` Code
+
+```r
+# Replace data with the name of your own data frame.
+data %>%
+  rowwise() %>%
+  mutate()
+```
+
+## Olympics Data: Complete Solution
+
+```r
+library(tidyverse)
+
+# 1. Read the data.
+read.csv("olympics.csv") -> olympics
+read_csv("olympics.csv")
+
+# 2. Keep only the variables we want.
+olympics %>%
+  select(X0, X1, X6) -> olympics
+
+# 3. Rename the variables.
+olympics %>%
+  rename(
+    country = X0,
+    summer  = X1,
+    winter  = X6
+  ) -> olympics
+```
+
+## Olympics Data: Complete Solution, Continued
+
+```r
+# 4. Create the total-medals variable.
+olympics %>%
+  slice(-1) %>%
+  rowwise() %>%
+  mutate(
+    total = sum(parse_number(summer), parse_number(winter))
+  ) -> olympics
+
+# 5. Keep only Germany.
+olympics %>%
+  filter(country == "Germany")
+
+# 6. Remove Chile.
+olympics %>%
+  filter(country != "Chile")
+```
+
+## Keep Building from Here
+
+- Replace the nine image placeholders when the original image files are available.
+- Edit any title, bullet, code block, or example directly in this `.qmd` file.
+- Render again to create a fresh, editable PowerPoint deck.
+

@@ -1,0 +1,123 @@
+---
+title: "Data"
+---
+
+I’m going to apologize in advance to the non-Americanists and non-behavioralists. I have not used any of the non-American datasets other than the Eurobarometer. I did my best to be inclusive while sticking to data that should be fairly straightforward to use. Below is a brief description of each dataset and links to the websites where codebooks can be found. You are not limited to the data listed here; these options are simply meant to help you get started.
+
+Remember that R is object-oriented: whatever is on the pointy end of an arrow is an **object** you are making in R. You can name that object whatever you want. For instance, the ANES example below uses `anes`, but you could use `data`, `survey`, or another name.
+
+## American Data
+
+### [ANES](https://www.dropbox.com/scl/fi/i6gp3y8ctmwxs1lp705ax/anes.csv?rlkey=44twem0nyu6tdq65sv2wlw93c&dl=0)
+
+The American National Election Studies is one of the most widely used datasets in American politics. It is a nationally representative sample that asks Americans about their opinions of political events and entities. The [ANES website](https://electionstudies.org/data-center/2020-time-series-study/) provides the codebook and more information. You will need to create a free account to download materials.
+
+```r
+library(tidyverse)
+
+# Remember to specify the correct path to your data.
+anes <- read_csv("ANES.csv")
+
+# Example when the file is in a Windows Downloads folder:
+anes <- read_csv("C:/Users/Name/Downloads/ANES.csv")
+```
+
+### [CES](https://www.dropbox.com/scl/fi/y6uydyukbyurypj86mzdw/CES22_Common.csv?rlkey=iv64d9hvn5qsb5qzzng0mek3j&dl=1)
+
+The Cooperative Election Study—formerly the CCES—is the largest readily available survey of American voters that I know of. It contains roughly 60,000 respondents, so each state is represented with a fair degree of accuracy. It asks many questions similar to the ANES, with fewer political-psychology items and more policy questions. The [Harvard Dataverse page](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi%3A10.7910/DVN/PR4L8P) contains the data and codebook.
+
+```r
+library(tidyverse)
+
+# Remember to specify the correct path to your data.
+ces22 <- read_csv("CES22_Common.csv")
+
+# Example from another folder:
+ces22 <- read_csv("C:/Users/Name/Downloads/CES22_Common.csv")
+```
+
+### State Data
+
+Jeremy Darrington at Princeton has already compiled many state-level sources. His [state politics data guide](https://libguides.princeton.edu/politics/american/states?fbclid=IwAR2Ca0dYavp5oSOh7koL58khRa8GaAG3QZJ6H1lkianL8p2Fowbw89wQs-w) includes numerous Stata datasets that may fit your interests.
+
+## Comparative Data
+
+### [QoG](https://www.dropbox.com/scl/fi/ns5ahd4tryl80o3ldgzx9/qog_bas_cs_jan23.csv?rlkey=2p23wdytksgqrb43apz2z8oqr&dl=1)
+
+The Quality of Government dataset is an open-source dataset measuring the quality of government. The version linked here is the basic dataset, which contains the most frequently used variables. The [QoG website](https://www.gu.se/en/quality-government/qog-data/data-downloads/basic-dataset) provides the codebook and more information.
+
+```r
+library(tidyverse)
+
+# Remember to specify the correct path to your data.
+qog <- read_csv("qog_bas_cs_jan23.csv")
+
+# Example from another folder:
+qog <- read_csv("C:/Users/Name/Downloads/qog_bas_cs_jan23.csv")
+```
+
+### [CPDS](https://www.dropbox.com/scl/fi/vfgcavfv07m2yhed78wo3/CPDS_1960-2021_Update_2023.xlsx?rlkey=rpm13814fkdugan9wo5hd3w69&dl=1)
+
+The Comparative Political Data Set is a collection of country-level comparative data. It contains annual data for 36 democracies from 1960–2021, or from the year each country became a democracy. More information is available on the [CPDS data page](https://www.cpds-data.org/index.php/data).
+
+This dataset is an `.xlsx` file rather than a CSV, so it requires a different reading function.
+
+```r
+# Install once; this can be run in the console.
+install.packages("xlsx")
+```
+
+```r
+library(tidyverse)
+
+# Remember to specify the correct path to your data.
+cpds <- xlsx::read.xlsx("CPDS_1960-2021_Update_2023.xlsx")
+
+# Example from another folder:
+cpds <- xlsx::read.xlsx(
+  "C:/Users/Name/Downloads/CPDS_1960-2021_Update_2023.xlsx"
+)
+```
+
+### [Manifesto Project](https://www.dropbox.com/scl/fi/xu5ae5b7gyzv753j1qlak/parties_MPDataset_MPDS2023a.csv?rlkey=tfniecrcgu3aw6j5l40vdraxg&dl=1)
+
+The Manifesto Project analyzes parties’ election manifestos to study political parties’ policy preferences around the world. Its [documentation website](https://manifestoproject.wzb.eu/information/documents/information) provides more information.
+
+```r
+library(tidyverse)
+
+# Remember to specify the correct path to your data.
+man <- read_csv("parties_MPDataset_MPDS2023a.csv")
+
+# Example from another folder:
+man <- read_csv(
+  "C:/Users/Name/Downloads/parties_MPDataset_MPDS2023a.csv"
+)
+```
+
+## International Relations Data
+
+I owe an extra apology to the IR scholars among you: IR data can be challenging to collect and work with, so the selection here is limited. If none of these sources fit your interests and you need help finding something, let me know.
+
+### [V-Dem](https://v-dem.net/data/the-v-dem-dataset/)
+
+V-Dem provides democracy ratings for a large number of countries and is commonly used in international relations research. You will need to create a free account. The data are available as CSV, RData, or Stata files.
+
+```r
+library(tidyverse)
+
+# Remember to specify the correct path to your data.
+vdem <- read_csv("vdem_file_name.csv")
+
+# Example from another folder:
+vdem <- read_csv("C:/Users/Name/Downloads/vdem_file_name.csv")
+```
+
+### [Correlates of War](https://correlatesofwar.org/data-sets/)
+
+The Correlates of War dataset contains information about conflicts between countries and non-state actors. No account is required, and several datasets are available. The [CoW War Data page](https://correlatesofwar.org/data-sets/cow-war/) includes the intra-state war data, although it can be messy.
+
+### Other Resources
+
+Other useful sources include Polity, Penn World Tables, CINC scores, PRIO conflict data, the CIRI Human Rights Dataset—now CIRIGHTS—and data from the World Bank and IMF.
+

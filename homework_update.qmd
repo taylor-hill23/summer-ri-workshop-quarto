@@ -1,0 +1,87 @@
+---
+title: "Homework"
+---
+
+## Day 1
+
+Take [this data](https://austin-cutler.quarto.pub/summer-ri-workshop/class_toy_data.csv) and clean it in the following ways. These steps do not need to be completed in order, as long as they are all completed.
+
+1. Make sure the variable names are correct and that the variables are formatted properly—that is, numeric variables are read as numeric and character variables are read as characters.
+
+   **Hint:** Look at the documentation for the function you are using to read the data by entering `?read_csv` in the console.
+
+2. Using `select()`, make a new data frame containing only the following variables: Age, Gender, Income, Approval Rating, Political Party, Opinion Text, Gun Control, and Abortion.
+
+3. At least one variable has negative numbers where the values should be read as `NA`. Find that variable and replace its negative values.
+
+   This involves `case_when()` and `mutate()`, which we discussed in class.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show Hint"
+
+# Make sure to include TRUE ~ x. This keeps the variable unchanged
+# in all other instances.
+data %>%
+  mutate(
+    x = case_when(
+      x < 0 ~ NA_real_,
+      TRUE  ~ x
+    )
+  )
+```
+
+4. Leave only Republicans in the data. Remember the `filter()` function.
+
+5. Upload your cleaned data and your code [here](https://www.dropbox.com/request/HHDxOiVqwY0Jitv8U5og). Use `write_csv()` and name the file `lastname_hw1_data.csv`.
+
+```r
+library(tidyverse)
+
+data %>%
+  mutate(doing_some_data_cleaning_here) %>%
+  select(the_variables_I_want) %>%
+  filter(the_observations_I_want) -> data
+
+write_csv(
+  data,
+  "path/where/you/want/it/saved/lastname_hw1_data.csv"
+)
+```
+
+## Day 2
+
+1. Download one of the datasets from the [Data](data.qmd) page and load it into R. It can be any dataset you want; the available choices are meant to represent a range of interests. If you would rather use a different dataset, send me an email.
+
+2. Make a tidy data frame:
+
+   - Pull out only the variables that interest you. These can include variables that do not appear directly in a figure or analysis but identify observations.
+   - Use the codebook to identify values representing missing data and remove those values.
+
+3. Practice using `group_by()` and `summarize()`:
+
+   - Identify two categorical variables of interest.
+   - Calculate group size with `n()`.
+   - Calculate the group mean of two continuous variables.
+
+```r
+# Roughly what your code should look like for each calculation:
+data %>%
+  group_by(categorical_variable) %>%
+  summarize(average = mean(continuous_variable))
+```
+
+4. Get the number of rows and columns in the cleaned version of your data.
+
+5. Report summary statistics for the continuous variables in your data.
+
+Upload your homework [here](https://www.dropbox.com/request/k7GKmpdAUNlKDv9yFD0n).
+
+## Day 3
+
+Based on what we learned in class today, try to make a graph! Anything will do.^[Anything except a pie chart.]
+
+The best graph will be printed and posted on my office door.
+
+Submit your graph [here](https://www.dropbox.com/request/dcxNK3uSqkLwm2fVghsz).
+
