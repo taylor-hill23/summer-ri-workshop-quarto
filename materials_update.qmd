@@ -11,13 +11,16 @@ title: "Course Materials"
   - Console, scripts, and the global environment
 - Using R as a calculator
 - Assigning objects
-- What is a function?
 - Vectors
 - Different types of variables
 - Tibbles, `mutate()`, `filter()`, `select()`, `rename()`, and `slice()`
 - Setting a working directory
 
-### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-1-update.html)
+### [Class Slides](materials/class-slides-day-1-powerpoint.pptx)
+
+### [Class Code](materials/day-1-code.R)
+
+### [Olympic Data](materials/olympics.csv)
 
 ## Day 2
 
