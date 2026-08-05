@@ -16,9 +16,9 @@ title: "Course Materials"
 - Tibbles, `mutate()`, `filter()`, `select()`, `rename()`, and `slice()`
 - Setting a working directory
 
-### [Class Slides](materials/class-slides-day-1-powerpoint.pptx)
+### [Day 1 Slides](materials/class-slides-day-1-powerpoint.pptx)
 
-### [Class Code](materials/day-1-code.R)
+### [Day 1 Code](materials/day-1-code.R)
 
 ### [Olympic Data](materials/olympics.csv)
 
@@ -36,13 +36,12 @@ title: "Course Materials"
 - Summarizing a single variable
 - Using lists
 
-### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-2-update.html)
+### [Day 2 Slides](materials/class-slides-day-2-powerpoint.pptx)
 
-### [Live Coding Data](https://austin-cutler.quarto.pub/summer-ri-workshop/live_coding_1.csv)
+### [Day 2 Code](materials/day-1-code.R)
 
-### [Class Code](https://austin-cutler.quarto.pub/summer-ri-workshop/live_coding_day_2.R)
+### [Live Coding Data](materials/live_coding_1.csv)
 
-The code we wrote together as a class can be found at the link above.
 
 ## Day 3
 
