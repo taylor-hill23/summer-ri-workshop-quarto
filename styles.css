@@ -1,6 +1,10 @@
-/* Match the small custom CSS rule used by the reference website. */
+/* Set the general sidebar and page-title color */
 .quarto-sidebar,
 .quarto-title {
   color: #CEB888;
 }
 
+/* Override only the sidebar website title */
+#quarto-sidebar .sidebar-title {
+  color: #CEB888;
+}
