@@ -2,6 +2,11 @@
 title: "Summer RI Workshop"
 ---
 
+![](materials/FSU-Westcott-metatag.avif){
+  width="70%"
+  fig-alt="Description of the workshop image"
+}
+
 Welcome to FSU! This website will have what you need to participate in the R workshop 
 and additional resources to aid you in learning how to code in R. At FSU, all methods
 courses use the R language for running statistical analysis. Therefore, learning R 
