@@ -2,11 +2,11 @@
 title: "Additional Resources"
 ---
 
-[Here](https://www.dropbox.com/sh/8o8k2ulhh529wdz/AAAN-pHd-7i224GRNPVFO1gja?dl=0) is a Dropbox folder with several books for learning R. I have used some of them; others were recommended to me. Some are more advanced than what you may be looking for right now, but feel free to save them for when your methods skills are more developed. The Scott Long book is particularly useful for maximum likelihood estimation, as is Gill (2014), although those books focus more on statistics than coding. I highlight a few specific resources below.
+[Here](https://www.dropbox.com/sh/8o8k2ulhh529wdz/AAAN-pHd-7i224GRNPVFO1gja?dl=0) is a Dropbox folder with several books for learning R. This folder was put together by Austin Culter. Some of the books are more advanced than what you may be looking for right now, but feel free to save them for when your methods skills are more developed. The Scott Long book is particularly useful for maximum likelihood estimation, as is Gill (2014), although those books focus more on statistics than coding. I highlight a few specific resources below.
 
 ## [R for Data Science](https://r4ds.hadley.nz/)
 
-This book is fantastic. I used the [first edition](https://r4ds.had.co.nz/), but either version is an excellent resource. Hadley Wickham developed the tidyverse, and this book is a go-to source for learning it. It covers not only how to write code but also important workflow topics we do not have time to cover fully, including scripts, file structures, and R projects. It is also freely available online.
+This book is fantastic. Hadley Wickham developed the tidyverse package, and this book is a go-to source for learning it. It covers not only how to write code but also important workflow topics we do not have time to cover fully, including scripts, file structures, and R projects. It is also freely available online.
 
 ## [Tidyverse Style Guide](https://style.tidyverse.org/)
 
@@ -14,9 +14,16 @@ This website is a style guide for using the tidyverse. Clean code is important f
 
 ## Graphical Data Analysis with R
 
-I have little experience with this book, but Matt Pietryka highly recommends it. Written by Anthony Unwin, it includes code examples and helps readers learn both ggplot and base R graphics. It focuses not only on how to make graphs, but also on how to communicate information effectively through them. I have a paper copy if anyone needs to borrow it.
+[Here](materials/data-visualization.pdf) is the ggplot cheatsheet. This is very useful as it has all of the arguments that you might need when making a figure with ggplot. I took a data visualization class, and I relied heavily on this document. 
 
-## Statistical Rethinking
+[Here](https://sape.inf.usi.ch/quick-reference/ggplot2/colour) is a link to all the ggplot colors and their names. I am constantly referencing this when I make figures. I like to be very precise about the colors that I use, so this is a great tool if you are as nit-picky as I am. 
 
-This one is too advanced for now, but I enjoyed it. It is a book about Bayesian statistics. Although I personally found Gill (2014) more engaging and easier to understand, *Statistical Rethinking* is well written and includes model implementations you can follow. A free [tidyverse-based version](https://bookdown.org/content/4857/) is available online.
+## Other Resources
 
+[Zotero](https://www.zotero.org/download/) 
+
+This links to the place where you can download Zotero onto your device and the Chrome extension. I highly recommend you use this or something similar. It will make your life so much easier in graduate school. Organization is key in graduate school! 
+
+[Stack Overflow](https://stackoverflow.com/questions)
+
+This links to Stack Overflow, which is an online chatroom that coders use to get answers to their questions. You can search for questions that others have asked or ask your own. I find that most questions I have about R have already been asked and answered on here. 
