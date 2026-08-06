@@ -27,3 +27,7 @@ This links to the place where you can download Zotero onto your device and the C
 [Stack Overflow](https://stackoverflow.com/questions)
 
 This links to Stack Overflow, which is an online chatroom that coders use to get answers to their questions. You can search for questions that others have asked or ask your own. I find that most questions I have about R have already been asked and answered on here. 
+
+[Big Book of R](https://www.bigbookofr.com/010-start_here) 
+
+This links ot a webpage that has more resources that can help you learn R.
