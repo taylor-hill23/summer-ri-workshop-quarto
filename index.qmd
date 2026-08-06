@@ -8,21 +8,28 @@ courses use the R language for running statistical analysis. Therefore, learning
 is very important, but do not fear. You do not need to have any prior knowledge in R 
 in order to be successful at FSU. 
 
-This workshop 
+This workshop is intended to introduce new PhD students to R. It starts at the 
+beginning with downloading R and RStudio and is designed to ensure that students 
+feel comfortable running commands in R to prepare for the method's sequence. 
 
 ### [Course Materials](materials_update.qmd)
 
-The Course Materials page has all the materials for each day of class. This includes the slides, example code, and related files.
+This page has all the materials for each day of class. This includes the slides, 
+example code, and related files.
 
 ### [Homework](homework_update.qmd)
 
-As the name suggests, this page has the homework for each day of class. You will also submit your homework through the Dropbox links at the end of each assignment.
+This page has the homework for each day of class. It also includes a link to a 
+Dropbox folder where you will submit the homework assignments. These assignments 
+are designed to give you practice with the skills we will learn in the workshop. 
 
 ### [Data](data.qmd)
 
-The Data page is where you can find the data we will use for class. Each dataset is linked in its section heading. Underneath each heading, you will find sample code for reading the data into R.
+This page is where you can find the data we will use for class. Each dataset is
+linked in its section heading. Underneath each heading, you will find sample code
+for reading the data into R.
 
 ### [Additional Resources](additional_resources.qmd)
 
-Because the course is only a few days long, we can realistically cover only so much. The Additional Resources page links to other resources that can make learning R a little easier.
+This page links to other resources that can make learning R a little easier.
 
