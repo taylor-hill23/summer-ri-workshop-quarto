@@ -17,6 +17,9 @@ This workshop is intended to introduce new PhD students to R. It starts at the
 beginning with downloading R and RStudio and is designed to ensure that students 
 feel comfortable running commands in R to prepare for the method's sequence. 
 
+Special thanks to Austin Cutler. The vast majority of these materials were put together
+by him from past years he taught this workshop. 
+
 ### [Course Materials](materials_update.qmd)
 
 This page has all the materials for each day of class. This includes the slides, 
