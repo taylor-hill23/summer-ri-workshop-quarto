@@ -2,6 +2,9 @@
 title: "Course Materials"
 ---
 
+**Download the code each day and follow along and run the code as we go over them.**
+The lecture slides will be posted after each day. 
+
 ## Day 1
 
 ### What did we cover?
@@ -16,12 +19,11 @@ title: "Course Materials"
 - Tibbles, `mutate()`, `filter()`, `select()`, `rename()`, and `slice()`
 - Setting a working directory
 
-### [Day 1 Slides](materials/class-slides-day-1-powerpoint.pptx)
 
 ### [Day 1 Code](materials/day-1-code.R)
-
-### [Olympic Data](materials/olympics.csv)
-
+<!--
+### [Day 1 Slides](materials/class-slides-day-1-powerpoint.pptx)
+-->
 ## Day 2
 
 ### What did we cover?
@@ -36,12 +38,13 @@ title: "Course Materials"
 - Summarizing a single variable
 - Using lists
 
-### [Day 2 Slides](materials/class-slides-day-2-powerpoint.pptx)
 
 ### [Day 2 Code](materials/day-1-code.R)
 
 ### [Live Coding Data](materials/live_coding_1.csv)
-
+<!--
+### [Day 2 Slides](materials/class-slides-day-2-powerpoint.pptx)
+-->
 
 ## Day 3
 
@@ -49,23 +52,26 @@ title: "Course Materials"
 
 - More practice with `mutate()`, `group_by()`, and `summarize()`
 - Learning more about the `factor()` function
+- Learning `ggplot`
 
-### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-3-update.html)
+### [Day 3 Code](materials/day-3-code.R)
 
 ### [Olympics Data](https://austin-cutler.quarto.pub/summer-ri-workshop/olympics.csv)
 
-### [Class Code](https://austin-cutler.quarto.pub/summer-ri-workshop/live_coding_day_3.R)
-
-The code from today’s class can be found at the link above. It largely covers using `ggplot()`.
+<!--
+### [Day 3 Slides](materials/class-slides-day3-powerpoint.pptx)
+-->
 
 ## Day 4
 
 ### What did we cover?
 
 - Reviewed each other’s graphs
-- Reviewed key concepts from the workshop
+- Went over Zotero
 - `for` loops
 - Writing functions
 
-### [Class Slides](https://austin-cutler.quarto.pub/summer-ri-workshop/class-slides-day-4.html)
-
+### [Day 4 Code](materials/day-4-code.R)
+<!--
+### [Day 4 Slides](materials/class-slides-day4-powerpoint.pptx)
+-->
