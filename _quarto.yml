@@ -9,11 +9,11 @@ project:
     - additional_resources.qmd
 
 website:
-  title: "Summer RI workshop"
+  title: "Summer RI Workshop"
   search: false
   sidebar:
     style: docked
-    background: "#CEB888"
+    background: "#782F40"
     contents:
       - href: index.qmd
         text: Home
