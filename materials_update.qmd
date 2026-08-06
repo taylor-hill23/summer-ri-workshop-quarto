@@ -3,6 +3,7 @@ title: "Course Materials"
 ---
 
 **Download the code each day and follow along and run the code as we go over them.**
+
 The lecture slides will be posted after each day. 
 
 ## Day 1
