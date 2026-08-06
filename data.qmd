@@ -2,7 +2,7 @@
 title: "Data"
 ---
 
-I’m going to apologize in advance to the non-Americanists and non-behavioralists. I have not used any of the non-American datasets other than the Eurobarometer. I did my best to be inclusive while sticking to data that should be fairly straightforward to use. Below is a brief description of each dataset and links to the websites where codebooks can be found. You are not limited to the data listed here; these options are simply meant to help you get started.
+Below is a brief description of each dataset and links to the websites where codebooks can be found. You are not limited to the data listed here; these options are simply meant to help you get started.
 
 Remember that R is object-oriented: whatever is on the pointy end of an arrow is an **object** you are making in R. You can name that object whatever you want. For instance, the ANES example below uses `anes`, but you could use `data`, `survey`, or another name.
 
