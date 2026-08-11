@@ -22,9 +22,9 @@ The lecture slides will be posted after each day.
 
 
 ### [Day 1 Code](materials/day-1-code.R)
-<!--
+
 ### [Day 1 Slides](materials/class-slides-day-1-powerpoint.pptx)
--->
+
 ## Day 2
 
 ### What did we cover?
