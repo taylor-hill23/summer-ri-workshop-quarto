@@ -21,7 +21,7 @@ The lecture slides will be posted after each day.
 - Setting a working directory
 
 
-### [Day 1 Code](materials/day-1-code.R)
+### [Day 1 Code](materials/day-1-code.R)a
 
 ### [Day 1 Slides](materials/class-slides-day-1-powerpoint.pptx)
 
@@ -40,7 +40,7 @@ The lecture slides will be posted after each day.
 - Using lists
 
 
-### [Day 2 Code](materials/day-1-code.R)
+### [Day 2 Code](materials/day-1-code.R){download="day-2-code.R"}
 
 ### [Live Coding Data](materials/live_coding_1.csv)
 <!--
@@ -55,7 +55,7 @@ The lecture slides will be posted after each day.
 - Learning more about the `factor()` function
 - Learning `ggplot`
 
-### [Day 3 Code](materials/day-3-code.R)
+### [Day 3 Code](materials/day-3-code.R){download="day-3-code.R"}
 
 ### [Olympics Data](https://austin-cutler.quarto.pub/summer-ri-workshop/olympics.csv)
 
@@ -72,7 +72,7 @@ The lecture slides will be posted after each day.
 - `for` loops
 - Writing functions
 
-### [Day 4 Code](materials/day-4-code.R)
+### [Day 4 Code](materials/day-4-code.R){download="day-4-code.R"}
 <!--
 ### [Day 4 Slides](materials/class-slides-day4-powerpoint.pptx)
 -->
