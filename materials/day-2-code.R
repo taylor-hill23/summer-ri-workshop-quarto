@@ -23,18 +23,7 @@ real_congress
 
 # Practice (write your code below)
 
-real_congress2<-real_congress %>%
-  janitor::clean_names() %>%
-  rename('party' = political_affiliation,
-         'state' = represented_state,
-         'age' = politician_age) %>%
-  filter(!is.na(party)) %>%
-  mutate(age_cat = case_when(age < 30 ~ "<30",
-                             (age >= 30 & age < 60) ~ "30-60",
-                             age >= 60 ~ "60+")) %>%
-  select(full_name,party,state,age_cat)
 
-real_congress2
 
 #================================
 # Aggregating Data
