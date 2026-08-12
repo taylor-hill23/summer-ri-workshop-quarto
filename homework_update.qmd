@@ -33,7 +33,7 @@ data %>%
 
 4. Leave only Republicans in the data. Remember the `filter()` function.
 
-5. Upload your cleaned data and your code [here](https://www.dropbox.com/scl/fo/xkp31m6ayyun1p9los0kn/ANYFtDFF8C8Lt3XeTDiiUO0?rlkey=162d8wgd3njuo6utz9d4v2khd&st=rhatboqt&dl=0). Use `write_csv()` and name the file `lastname_hw1_data.csv`.
+5. Upload your cleaned data and your code [here](https://www.dropbox.com/request/2uzqlkgohcy2kox3ihr0). Use `write_csv()` and name the file `lastname_hw1_data.csv`.
 
 ```r
 library(tidyverse)
@@ -75,7 +75,7 @@ data %>%
 
 5. Report summary statistics for the continuous variables in your data.
 
-Upload your homework [here](https://www.dropbox.com/request/k7GKmpdAUNlKDv9yFD0n).
+Upload your homework [here](https://www.dropbox.com/request/n8uz6liac4x5904skg65).
 
 ## Day 3
 
@@ -83,5 +83,5 @@ Based on what we learned in class today, try to make a graph! Anything will do.^
 
 The best graph will be printed and posted on my office door.
 
-Submit your graph [here](https://www.dropbox.com/request/dcxNK3uSqkLwm2fVghsz).
+Submit your graph and code [here](https://www.dropbox.com/request/qhjq821d88up9c1953zh).
 
