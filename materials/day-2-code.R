@@ -24,6 +24,13 @@ real_congress
 # Practice (write your code below)
 
 
+#================================
+# Practice with Live Coding Data
+#================================
+
+# Type your code below
+
+
 
 #================================
 # Aggregating Data
@@ -119,11 +126,50 @@ table(real_congress$party)
 
 length(real_congress$party)
 
+
+
 #================================
-# Practice with Live Coding Data
+# More on Vectors
 #================================
 
-# Type your code below
+# To make your code reproducible, always set seed
+## You can use any number you want
+set.seed(26)
+rnorm(5)
+
+# Running this without setting seed gives you different numbers
+rnorm(5)
+
+# Normal distribution
+set.seed(26)
+normal<-rnorm(100)
+normal
+
+# Uniform distribution
+uniform<-runif(100)
+uniform
+
+# Binomial distribution
+binomial<- rbinom(100, 1, prob=0.5)
+binomial
+
+
+# Normal distribution - change mean and standard deviation
+set.seed(26)
+normal<-rnorm(100, mean=75, sd=10)
+normal
+
+# Uniform distribution- change minimum and maximum
+uniform<-runif(100)
+uniform
+
+# Binomial distribution- change the size (uncommon) and probability
+binomial<- rbinom(100, 1, prob=0.25)
+binomial
+
+# Practice (Type your code below)
+
+
 
 
 #================================
