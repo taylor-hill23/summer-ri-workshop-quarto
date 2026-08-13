@@ -40,7 +40,7 @@ The lecture slides will be posted after each day.
 - Using lists
 
 
-### [Day 2 Code](materials/day-1-code.R){download="day-2-code.R"}
+### [Day 2 Code](materials/day-2-code.R){download="day-2-code.R"}
 
 ### [Live Coding Data](materials/live_coding_1.csv)
 <!--
