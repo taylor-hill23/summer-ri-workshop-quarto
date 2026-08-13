@@ -43,9 +43,9 @@ The lecture slides will be posted after each day.
 ### [Day 2 Code](materials/day-2-code.R){download="day-2-code.R"}
 
 ### [Live Coding Data](materials/live_coding_1.csv)
-<!--
+
 ### [Day 2 Slides](materials/class-slides-day-2-powerpoint.pptx)
--->
+
 
 ## Day 3
 
