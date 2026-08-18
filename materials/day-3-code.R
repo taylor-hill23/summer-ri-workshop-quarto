@@ -52,15 +52,10 @@ anes_data_p<-anes_data %>%
 
 table(anes_data_p$pid)
 
-#==================================
-# Group Work
-#==================================
-
-# Type your code below
 
 
 #==================================
-# ggplot
+# ggplot !!!
 #==================================
 
 # Basic structure of a ggplot graph
@@ -90,7 +85,7 @@ politicians <- data |>
     committees_joined  = `Committees Joined`
   ) %>%
   mutate(
-    # Order the party ID using factor
+    # Reorder the party ID using factor
     party = factor(
       party,
       levels = c("Democratic", "Republican", "Independent", "Libertarian")
@@ -138,6 +133,23 @@ politicians |>
   ggplot(aes(x=party, y=age)) +
   geom_boxplot()
 
+# Changing the theme
+politicians |>
+  ggplot(aes(x=party, y=age)) +
+  geom_boxplot()+
+  theme_bw()
+
+politicians |>
+  ggplot(aes(x=party, y=age)) +
+  geom_boxplot()+
+  theme_minimal()
+
+politicians |>
+  ggplot(aes(x=party, y=age)) +
+  geom_boxplot()+
+  theme_classic()
+
+
 
 # Adding Color
 politicians |>
@@ -148,7 +160,7 @@ politicians |>
   theme_bw()
 
 
-## Adding color manually
+# Adding color manually
 politicians |>
   group_by(party) |>
   summarise(ave_age=mean(age)) |>
