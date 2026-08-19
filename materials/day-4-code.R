@@ -11,28 +11,7 @@
 
 library(tidyverse)
 
-world_data <- tibble(
-  country  = c("USA", "JAP", "CAD", "RUS", "UK"),
-  wars     = c(10, 3, 6, 8, 4),
-  gov      = c("pres", "par", "par", "auth", "par"),
-  turnout  = c(60, 80, 75, 99, 80),
-  elect_yr = c(TRUE, FALSE, FALSE, NA, TRUE)
-)
 
-world_data %>%
-  group_by(gov) %>%
-  summarize(
-    average_turnout = mean(turnout)
-  )
-
-table(data$gov)
-
-world_data <- world_data %>%
-  mutate(authoritarian = if_else(gov == "auth", 1, 0)
-  )
-
-election_data <- world_data %>%
-  filter(elect_yr == TRUE)
 
 
 
