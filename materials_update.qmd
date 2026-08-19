@@ -59,9 +59,7 @@ The lecture slides will be posted after each day.
 
 ### [Olympics Data](https://austin-cutler.quarto.pub/summer-ri-workshop/olympics.csv)
 
-<!--
 ### [Day 3 Slides](materials/class-slides-day3-powerpoint.pptx)
--->
 
 ## Day 4
 
